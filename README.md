@@ -18,7 +18,7 @@
 生成rgb2raw矩阵。
 解析文件夹，使用cv2.read读取图片，所有图片经过pipeline处理。
 给定index返回这一组八帧图像的gt和measurement
-（4）davis.py和上述文件作用差不多，但是省略了生成rgb2raw矩阵。
-（5）real_data.py从mat文件读入，之间经过归一化、维度转换输出measurement数据
-（6）six_gray_sim_data.py从mat文件读入，经过处理返回数据的GT和measurement图像。
+（4）davis.py和上述文件作用差不多，但是省略了生成rgb2raw矩阵。  
+（5）real_data.py从mat文件读入，之间经过归一化、维度转换输出measurement数据  
+（6）six_gray_sim_data.py从mat文件读入，经过处理返回数据的GT和measurement图像。 
 
