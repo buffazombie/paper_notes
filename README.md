@@ -6,6 +6,7 @@
 （2）彩色bayer测量值生成函数GenerationBayerMeas:
 三通道图像数据首先和rgb2raw权重矩阵相乘，随后沿着通道维度相加变为一个二维数据Y，每一帧的Y再和mask相乘、相加得到测量数据。
  ![image](https://github.com/user-attachments/assets/c1dd3c01-54bd-42b3-bd6d-7b9a72dd6e36)
+ 
 2.builder.py：构建数据处理的流水线实例注册表，底层函数都是调用build_from_cfg根据config文件构造一个实例，可能是数据集也可能是数据处理流水线（数据读取、增强）
  
 3.compose.py：将多个数据处理步骤组合成流水线，依次对输入数据进行处理
